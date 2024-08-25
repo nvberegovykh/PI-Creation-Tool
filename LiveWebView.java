@@ -1,9 +1,3 @@
-package com.beregovykh.studio;
-
-import android.content.Context;
-import android.util.AttributeSet;
-import android.webkit.WebView;
-
 public class LiveWebView extends WebView {
 
     public LiveWebView(Context context) {
