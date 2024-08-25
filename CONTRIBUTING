@@ -1,9 +1,9 @@
 # Contributing to PI Creation Tool
 
-Thank you for considering contributing to PI Creative Tool! 
+Thank you for considering contributing to PI Creation Tool! 
 This multi-platform app offers tools for file management, AI assistance, dashboards, 
 quick app generation, etc. All tools are in one HUB, that works as encapsulation of management algorithm, made by Nikita Beregovykh (Liber Creative LLC) for Android, iOS, Windows, and macOS. 
-Created by Nikita Beregovykh (Liber Creative LLC), PI Creative Tool is licensed under the BSD 3-Clause License.
+Created by Nikita Beregovykh (Liber Creative LLC), PI Creation Tool is licensed under the BSD 3-Clause License.
 
 ## How to Contribute
 
@@ -22,7 +22,7 @@ We welcome contributions from the community! To submit a pull request, follow th
 
 2. **Clone the Fork**: Clone your fork to your local machine using the following command:
    ```bash
-   git clone https://github.com/your-username/pi-creative-tool.git
+   git clone https://github.com/your-username/pi-creation-tool.git
 
 Create a Branch: Create a new branch for your changes. Use a descriptive name for your branch to indicate the feature or fix you are working on:
 git checkout -b feature/your-feature-name
@@ -40,7 +40,8 @@ Any relevant issue numbers (e.g., “Closes #123”).
 A summary of the changes made.
 Any additional information that may be helpful for the review.
 Code Style
-Please follow the existing code style and conventions used in the project. Ensure your code is well-documented and includes comments where necessary. All contributions must strictly adhere to Liber Creative LLC’s coding rules, as specified in each developer’s contract. We recommend using a linter to check your code for style issues before submitting a pull request.
+Please follow the existing code style and conventions used in the project. Ensure your code is well-documented and includes comments where necessary. All contributions must strictly adhere to Liber Creative LLC’s coding rules, as specified in each developer’s contract. 
+We recommend using a linter to check your code for style issues before submitting a pull request.
 
 License
 By contributing to PI Creation Tool, you agree that your contributions will be licensed under the BSD 3-Clause License.
@@ -50,4 +51,5 @@ If you have any questions or need further assistance, feel free to reach out to 
 
 Thank you for your contributions!
 
-Note: PI Creative Tool consists of more than 30.0% original code, with the remaining parts being standard Android framework and basic constructions. Keep your code clean and original, we are making future. Ask me directly
+Note: PI Creation Tool consists of more than 30.0% original code, with the remaining parts being standard Android framework and basic constructions. 
+Keep your code clean and original, we are making future. Ask me directly, if you have any questions, no one's else responses may be legit at the moment.
