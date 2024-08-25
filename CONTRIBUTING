@@ -44,7 +44,8 @@ Please follow the existing code style and conventions used in the project. Ensur
 We recommend using a linter to check your code for style issues before submitting a pull request.
 
 License
-By contributing to PI Creation Tool, you agree that your contributions will be licensed under the BSD 3-Clause License.
+By contributing to PI Creation Tool and any dependency, made by Liber Creative LLC and assigned as BSD 3-Clause Licensed, you agree that your contributions will be licensed under the BSD 3-Clause License.
+In any other cases it's Apache License 2.0 or equivalent.
 
 Contact
 If you have any questions or need further assistance, feel free to reach out to us through the GitHub repository or contact Nikita Beregovykh at nv@beregovykh.ru.
