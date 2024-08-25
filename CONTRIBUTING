@@ -1,0 +1,53 @@
+# Contributing to PI Creation Tool
+
+Thank you for considering contributing to PI Creative Tool! 
+This multi-platform app offers tools for file management, AI assistance, dashboards, 
+quick app generation, etc. All tools are in one HUB, that works as encapsulation of management algorithm, made by Nikita Beregovykh (Liber Creative LLC) for Android, iOS, Windows, and macOS. 
+Created by Nikita Beregovykh (Liber Creative LLC), PI Creative Tool is licensed under the BSD 3-Clause License.
+
+## How to Contribute
+
+### Reporting Issues
+If you encounter any bugs, have suggestions for improvements, or want to request new features, please open an issue on our GitHub repository. When reporting an issue, please include:
+
+- A clear and descriptive title.
+- A detailed description of the problem or suggestion.
+- Steps to reproduce the issue (if applicable).
+- Any relevant screenshots or logs.
+
+### Submitting Pull Requests
+We welcome contributions from the community! To submit a pull request, follow these steps:
+
+1. **Fork the Repository**: Create a personal fork of the repository on GitHub by clicking the "Fork" button at the top right of the repository page.
+
+2. **Clone the Fork**: Clone your fork to your local machine using the following command:
+   ```bash
+   git clone https://github.com/your-username/pi-creative-tool.git
+
+Create a Branch: Create a new branch for your changes. Use a descriptive name for your branch to indicate the feature or fix you are working on:
+git checkout -b feature/your-feature-name
+
+Make Changes: Implement your changes in the new branch. Ensure your code follows the project’s coding standards and is well-documented. All contributions must strictly adhere to Liber Creative LLC’s coding rules, as specified in each developer’s contract.
+Commit Changes: Commit your changes with a clear and descriptive commit message:
+git commit -m "Add feature: your-feature-name"
+
+Push Changes: Push your changes to your fork on GitHub:
+git push origin feature/your-feature-name
+
+Open a Pull Request: Open a pull request from your branch to the main repository’s main branch. Provide a clear description of your changes, including:
+The purpose of the changes.
+Any relevant issue numbers (e.g., “Closes #123”).
+A summary of the changes made.
+Any additional information that may be helpful for the review.
+Code Style
+Please follow the existing code style and conventions used in the project. Ensure your code is well-documented and includes comments where necessary. All contributions must strictly adhere to Liber Creative LLC’s coding rules, as specified in each developer’s contract. We recommend using a linter to check your code for style issues before submitting a pull request.
+
+License
+By contributing to PI Creation Tool, you agree that your contributions will be licensed under the BSD 3-Clause License.
+
+Contact
+If you have any questions or need further assistance, feel free to reach out to us through the GitHub repository or contact Nikita Beregovykh at nv@beregovykh.ru.
+
+Thank you for your contributions!
+
+Note: PI Creative Tool consists of more than 30.0% original code, with the remaining parts being standard Android framework and basic constructions. Keep your code clean and original, we are making future. Ask me directly
