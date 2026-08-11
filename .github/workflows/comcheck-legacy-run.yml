@@ -1,0 +1,35 @@
+name: COMcheck Legacy Processor
+
+on:
+  push:
+    paths:
+      - '.github/workflows/comcheck-legacy-run.yml'
+      - 'tools/comcheck/legacy_processor.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser
+        shell: pwsh
+        run: |
+          pip install playwright
+          playwright install chromium
+      - name: Run Legacy COMcheck processor
+        shell: pwsh
+        run: python tools/comcheck/legacy_processor.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: comcheck-legacy-output
+          path: tools/comcheck/legacy_out
+          if-no-files-found: warn
