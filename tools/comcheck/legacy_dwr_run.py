@@ -36,7 +36,6 @@ with sync_playwright() as p:
     print('HAS_PS',page.evaluate('typeof ProjectService'),flush=True)
     print('PS_UPLOAD',page.evaluate('typeof ProjectService!=="undefined" && typeof ProjectService.uploadProject'),flush=True)
     dump(page,'00_initial')
-    # Inject the exact control shape expected by includes/load_save.js.
     page.evaluate("""() => { const old=document.getElementById('fileToUpload'); if(old) old.remove(); const i=document.createElement('input'); i.type='file'; i.id='fileToUpload'; i.name='fileToUpload'; i.style.position='fixed'; i.style.left='10px'; i.style.top='10px'; i.style.zIndex='999999'; document.body.appendChild(i); }""")
     page.locator('#fileToUpload').set_input_files(str(target.resolve()))
     print('FILE_VALUE',page.locator('#fileToUpload').input_value(),flush=True)
@@ -55,8 +54,9 @@ with sync_playwright() as p:
         if page.locator('#compliance').count():
             print('CLICK_COMPLIANCE',flush=True)
             page.locator('#compliance').click()
+            waited=0
             for sec in (5,15,30,60):
-                page.wait_for_timeout((sec-(0 if sec==5 else {15:5,30:15,60:30}[sec]))*1000)
+                page.wait_for_timeout((sec-waited)*1000); waited=sec
                 txt=dump(page,f'compliance_{sec}s')
                 print('COMP_STATUS',sec,'TBD' if 'Envelope TBD' in txt else 'NO_TBD','FAIL' if 'Envelope simulations failed' in txt else 'NO_FAIL',flush=True)
                 if 'Envelope simulations failed' not in txt and 'Envelope TBD' not in txt: break
@@ -64,3 +64,4 @@ with sync_playwright() as p:
             print('NO_COMPLIANCE_BUTTON',flush=True)
     (OUT/'dialogs.json').write_text(json.dumps(dialogs,indent=2),encoding='utf-8')
     b.close()
+# trigger 2
