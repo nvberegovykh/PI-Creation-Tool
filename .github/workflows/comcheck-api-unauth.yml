@@ -1,0 +1,18 @@
+name: COMcheck API Unauth Probe
+on:
+  push:
+    paths:
+      - '.github/workflows/comcheck-api-unauth.yml'
+      - 'tools/comcheck/api_unauth_probe.py'
+  workflow_dispatch:
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - run: python tools/comcheck/api_unauth_probe.py
